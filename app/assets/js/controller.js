@@ -23,3 +23,11 @@ app.controller("tutorialCtrl", function ($scope) {
   });
 
 });
+
+app.controller("registrarseCtrl", function ($scope, $rootScope, $location) {
+  console.log("registrate");
+});
+
+app.controller("iniciarsesionCtrl", function ($scope, $rootScope, $location) {
+  console.log("inicia sesión");
+});
