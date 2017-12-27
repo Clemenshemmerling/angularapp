@@ -13,13 +13,12 @@ var app = angular.module("myApp", ["ngRoute", "firebase"]);
 app.controller("tutorialCtrl", function ($scope) {
 
   $(document).ready(function () {
-    function autoplay() {
+    function autoplay () {
       $('.carousel.carousel-slider').carousel({fullWidth: true});
       $('.carousel.carousel-slider').carousel('next');
       setTimeout(autoplay, 4500);
     }
     autoplay();
-    console.log("funciona");
   });
 
 });
