@@ -1,0 +1,14 @@
+.vm {
+  margin: 10px 0;
+}
+
+.btn-custom {
+   width: 100%;
+   font-size: 60px;
+   padding: 20px;
+   height: 120px;
+}
+
+.carousel {
+    height: 90vh;
+}
