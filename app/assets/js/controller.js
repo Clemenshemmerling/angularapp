@@ -25,7 +25,13 @@ app.controller("tutorialCtrl", function ($scope) {
 });
 
 app.controller("registrarseCtrl", function ($scope, $rootScope, $location) {
-  console.log("registrate");
+
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+    .catch(function(error) {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+    });
+
 });
 
 app.controller("iniciarsesionCtrl", function ($scope, $rootScope, $location) {

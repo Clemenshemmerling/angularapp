@@ -12,3 +12,9 @@
 .carousel {
     height: 90vh;
 }
+
+.bimg {
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
