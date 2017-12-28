@@ -24,12 +24,20 @@ app.controller("tutorialCtrl", function ($scope) {
 });
 
 app.controller("registrarseCtrl", function ($scope, $rootScope, $location) {
+  $scope.sigin = function () {
 
-  firebase.auth().createUserWithEmailAndPassword(email, password)
-    .catch(function(error) {
+    const email = $scope.email
+    const pass = $scope.pass
+    const auth = firebase.auth()
+    const promise = auth.createUserWithEmailAndPassword(email, pass)
+
+
+    promise.catch(function(error) {
       var errorCode = error.code;
       var errorMessage = error.message;
     });
+
+  }
 
 });
 
